@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ιστορία των Υφαντών</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="Logo" />
+      </div>
+      <ul>
+        <li><a id="nav-home" href="#" onclick="showSection('home')">ΑΡΧΙΚΗ</a></li>
+        <li><a id="nav-about" href="#" onclick="showSection('about')">ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ</a></li>
+        <li><a id="nav-history" href="#" onclick="showSection('history')">ΙΣΤΟΡΙΑ ΤΟΥ ΝΗΣΙΟΥ</a></li>
+        <li><a id="nav-yfant" href="#" onclick="showSection('yfant')">ΥΦΑΝΤΑ</a></li>
+        <li><a id="nav-events" href="#" onclick="showSection('events')">ΕΚΘΕΣΕΙΣ ΚΑΙ ΕΚΔΗΛΩΣΕΙΣ</a></li>
+        <li><a id="nav-collections" href="#" onclick="showSection('collections')">ΜΟΝΙΜΕΣ ΣΥΛΛΟΓΕΣ</a></li>
+        <li><a id="nav-contact" href="#" onclick="showSection('contact')">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+        <li><a href="#" onclick="toggleLanguage()">EN/GR</a></li>
+      </ul>
+    </nav>
+
+    <!-- Αρχική -->
+    <div id="home" class="section">
+      <div class="title">
+        <h1 id="main-title">Τα Υφαντά γύρω απο την Κρήτη</h1>
+      </div>
+      <!-- ΔΙΑΔΡΑΣΤΙΚΟΣ ΧΑΡΤΗΣ ΚΡΗΤΗΣ -->
+<div class="map-wrap">
+  <img src="crete-map1.png" alt="Χάρτης της Κρήτης" class="map-img" />
+
+  <!-- Μακάθι -->
+<a class="pin" style="top:56%; left:22%;"
+   href="makathi.html" target="_blank">
+  <img src="yfanto1.jpg" alt="Μακάθι — Μονή Καλυβιανής" />
+  <span class="pin-label" id="pin1-label">Μακάθι (Καλυβιανή)</span>
+</a>
+
+<!-- Βούργια -->
+<a class="pin" style="top:52%; left:42%;"
+   href="vourgia-milopotamos.html" target="_blank">
+  <img src="yfanto2.jpg" alt="Βούργια — Μυλοπόταμος" />
+  <span class="pin-label" id="pin2-label">Βούργια (Μυλοπόταμος)</span>
+</a>
+
+<!-- Πάντα -->
+<a class="pin" style="top:51%; left:75%;"
+   href="panta-merabello.html" target="_blank">
+  <img src="yfanto4.jpg" alt="Πάντα — Μεραμπέλλο 1885" />
+  <span class="pin-label" id="pin3-label">Πάντα (Μεραμπ.)</span>
+</a>
+<!-- Μακάθι με Κεντρικό Ανθικό Μοτίβο -->
+<a class="pin" style="top:36%; left:63%;"
+   href="anthiko-motibo.html" target="_blank">
+  <img src="yfanto16.jpg" alt="Μακάθι με Κεντρικό Ανθικό Μοτίβο" />
+  <span class="pin-label" id="pin4-label">Μακάθι με Κεντρικό Ανθικό Μοτίβο</span>
+</a>
+
+<!-- Υφαντό με Εξάφυλλα Αστέρια -->
+<a class="pin" style="top:66%; left:55%;"
+   href="eksafulla asteria.html" target="_blank">
+  <img src="yfanto15.jpg" alt="Υφαντό με Εξάφυλλα Αστέρια" />
+  <span class="pin-label" id="pin5-label">Υφαντό με Εξάφυλλα Αστέρια</span>
+</a>
+
+
+<a class="pin" style="top:25%; left:10%;"
+   href="geometrikos-rombos.html" target="_blank">
+  <img src="yfanto14.jpg" alt="Παραδοσιακό Υφαντό Πορτοφόλι με Γεωμετρικό Ρόμβο" />
+  <span class="pin-label" id="pin6-label">Παραδοσιακό Υφαντό Πορτοφόλι με Γεωμετρικό Ρόμβο</span>
+</a>
+
+<!-- Κιλίμι -->
+<a class="pin" style="top:57%; left:86%;"
+   href="kilimi.html" target="_blank">
+  <img src="yfanto3.jpg" alt="Κιλίμι — 1888" />
+  <span class="pin-label">Κιλίμι (1888)</span>
+</a>
+
+</div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- Σχετικά με εμάς -->
+    <section id="about" class="section about-section" style="display:none;">
+      <h1 id="about-title">Σχετικά με εμάς</h1>
+      <p id="about-text">
+        Η παρούσα ιστοσελίδα αποτελεί μέρος της πτυχιακής εργασίας στο
+        Τμήμα Επιστήμης Υπολογιστών και έχει ως κύριο αντικείμενο
+        την ανάδειξη και την προβολή των παραδοσιακών υφαντών της Κρήτης.
+        <br /><br />
+        Η εργασία επιχειρεί να συνδέσει την πλούσια πολιτιστική κληρονομιά
+        του νησιού με τις σύγχρονες τεχνολογίες πληροφορικής, δημιουργώντας
+        έναν ψηφιακό χώρο όπου η παράδοση συναντά την καινοτομία.
+        <br /><br />
+        Η πτυχιακή εκπονήθηκε από τον φοιτητή
+        <strong>Παναγιώτη Μπερμπερίδη</strong> υπό την επίβλεψη του
+        Καθηγητή <strong>Ιωάννη Ζαμπούλη</strong>, με στόχο να αποτελέσει
+        ένα εύχρηστο και καλαίσθητο εργαλείο για κάθε επισκέπτη που
+        ενδιαφέρεται να γνωρίσει την τέχνη των υφαντών, την ιστορία τους
+        και τον ρόλο τους στον πολιτισμό της Κρήτης.
+      </p>
+    </section>
+
+    <!-- Ιστορία του Νησιού -->
+    <section id="history" class="section" style="display:none;">
+      <h1 id="history-title">Ιστορία του Νησιού</h1>
+      <p id="history-text">
+        Η ιστορία της Κρήτης ξεκινά από τη Νεολιθική εποχή, όταν οι πρώτες
+        μόνιμες εγκαταστάσεις εμφανίστηκαν γύρω στο 7.000 π.Χ.
+        Με την πάροδο των αιώνων, η Κρήτη ανέδειξε τον Μινωικό πολιτισμό,
+        τον πρώτο μεγάλο πολιτισμό στην Ευρώπη, γνωστό για τα ανάκτορα
+        της Κνωσού, της Φαιστού και των άλλων κέντρων.
+        <br /><br />
+        Μετά την κατάρρευση του Μινωικού πολιτισμού, η Κρήτη πέρασε υπό την
+        επιρροή των Μυκηναίων και αργότερα ενσωματώθηκε στη Ρωμαϊκή και
+        Βυζαντινή κυριαρχία. Σε μεταγενέστερες περιόδους γνώρισε την
+        Ενετοκρατία, την Οθωμανική κατοχή, καθώς και την δημιουργία της
+        Κρητικής Πολιτείας έως ότου ενσωματωθεί οριστικά στο ελληνικό κράτος.
+        <br /><br />
+        Η Κρήτη διατήρησε πάντα έντονη πολιτιστική ταυτότητα και παράδοση,
+        που επηρέασε την υφαντική τέχνη της, τα έθιμα, τη μουσική και τη λαϊκή
+        έκφραση. Μέσα από τις αλλαγές, η ιστορία της αντανακλά την αντίσταση,
+        τη δημιουργία και την επιβίωση ενός νησιού που έζησε πολλές επιρροές
+        αλλά κράτησε τον πυρήνα της παράδοσης.
+      </p>
+    </section>
+
+    <!-- Υφαντά -->
+    <section id="yfant" class="section" style="display:none;">
+      <h1 id="yfant-title">Υφαντά</h1>
+
+      <div class="weaving-gallery">
+        <article class="weaving-card">
+          <img src="yfanto1.jpg" alt="Μακάθι" />
+          <div class="weaving-info">
+            <h3 id="weaving1-title">Μακάθι — Μονή Καλυβιανής</h3>
+            <p id="weaving1-text">
+              Σύντομη περιγραφή: Αυτό το υφαντό είναι ένα μακάτι από τη Μονή
+              Καλυβιανής στην Κρήτη. Πρόκειται για παραδοσιακό κρητικό υφαντό
+              με πολύχρωμα γεωμετρικά μοτίβα — ρόμβους, τρίγωνα και
+              διακοσμητικές λωρίδες — που υφαίνονται με τεχνική διπλού
+              υφάσματος σε έντονους κόκκινους, χρυσοκίτρινους και πορτοκαλί
+              τόνους. Το μοτίβο του συμβολίζει τη γυναικεία δημιουργικότητα και
+              την ευημερία, ενώ η πλούσια χρωματική παλέτα και η συμμετρία
+              φανερώνουν υψηλή δεξιοτεχνία και παράδοση αιώνων στη μοναστηριακή
+              υφαντική της Κρήτης.
+            </p>
+          </div>
+        </article>
+
+        <article class="weaving-card">
+          <img src="yfanto2.jpg" alt="Βούργια" />
+          <div class="weaving-info">
+            <h3 id="weaving2-title">Βούργια — Μυλοπόταμος +1915</h3>
+            <p id="weaving2-text">
+              Σύντομη περιγραφή: Πλούσιο κέντημα με έντονα κόκκινα και χρυσά
+              χρώματα. Κυριαρχούν ρόμβοι και συμμετρικά γεωμετρικά σχέδια.
+              Χρησιμοποιούνταν ως διακοσμητικό ή αποθηκευτικό ύφασμα στις
+              ορεινές περιοχές του Μυλοποτάμου.
+            </p>
+          </div>
+        </article>
+
+        <article class="weaving-card">
+          <img src="yfanto3.jpg" alt="Κιλίμι" />
+          <div class="weaving-info">
+            <h3 id="weaving3-title">Κιλίμι — Καινούριο 1888</h3>
+            <p id="weaving3-text">
+              Σύντομη περιγραφή: Λεπτό, επιμελημένο υφαντό με επαναλαμβανόμενα
+              ρόμβους και σπειροειδή μοτίβα. Διακρίνεται για την ακρίβεια του
+              σχεδίου και τη συμμετρία, χαρακτηριστικό της ανατολικής Κρήτης.
+            </p>
+          </div>
+        </article>
+
+        <article class="weaving-card">
+          <img src="yfanto4.jpg" alt="Πάντα" />
+          <div class="weaving-info">
+            <h3 id="weaving4-title">Πάντα - Μεραμπέλλο 1885</h3>
+            <p id="weaving4-text">
+              Σύντομη περιγραφή: Χοντρό, θερμό ύφασμα με πολύχρωμες διαγώνιες
+              ζώνες και γεωμετρικές μορφές. Συχνά χρησιμοποιούνταν για κάλυμμα
+              ή επένδυση τοίχων, συνδυάζοντας πρακτικότητα και διακόσμηση.
+            </p>
+          </div>
+        </article>
+
+        <article class="weaving-card">
+          <img src="yfanto5.jpg" alt="Βούργια" />
+          <div class="weaving-info">
+            <h3 id="weaving5-title">Βούργια - Μεράμπελλο 1860</h3>
+            <p id="weaving5-text">
+              Σύντομη περιγραφή: Ύφασμα με λεπτή, επιμήκη διάταξη και κάθετες
+              λωρίδες σε λευκό, κόκκινο και μπλε. Διακρίνεται για τα μεσαία
+              ρόμβικα μοτίβα και τη συμμετρική του απλότητα· πιθανότατα
+              χρησιμοποιούνταν ως τσάντα ή κάλυμμα.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Εκθέσεις -->
+    <section id="events" class="section" style="display:none;">
+      <h1 id="events-title">Εκθέσεις & Εκδηλώσεις</h1>
+
+      <div class="events-container">
+        <div class="event-card">
+          <img src="ekthesiyfantonHer.jpg" alt="Έκθεση Υφαντών" class="event-img" />
+          <div class="event-info">
+            <div class="event-date" id="event1-date">15 Νοεμβρίου 2025</div>
+            <h3 id="event1-title">Έκθεση Παραδοσιακών Υφαντών στο Ηράκλειο</h3>
+            <p id="event1-text">
+              Μια μοναδική έκθεση που αναδεικνύει τη μαγεία της παραδοσιακής
+              υφαντικής τέχνης της Κρήτης, με σπάνια κομμάτια και ιστορικά υφαντά.
+            </p>
+            <a href="event1.html" id="event1-link">Δείτε περισσότερα</a>
+          </div>
+        </div>
+
+        <div class="event-card">
+          <img src="ekthesiyfanton2.jpg" alt="Εργαστήριο Υφαντικής" class="event-img" />
+          <div class="event-info">
+            <div class="event-date" id="event2-date">10 Δεκεμβρίου 2025</div>
+            <h3 id="event2-title">Διαδραστικό Εργαστήριο Υφαντικής</h3>
+            <p id="event2-text">
+              Ένα δημιουργικό σεμινάριο όπου οι συμμετέχοντες θα μάθουν βασικές
+              τεχνικές και θα δημιουργήσουν τα δικά τους υφαντά.
+            </p>
+            <a href="event2.html" id="event2-link">Δείτε περισσότερα</a>
+          </div>
+        </div>
+     
+
+    <div class="event-card">
+  <img src="ekthesiyfanton3.jpg" alt="Βραδιά Παράδοσης & Υφαντικής Κληρονομιάς" class="event-img" />
+  
+  <div class="event-info">
+    <div class="event-date" id="event3-date">20 Ιανουαρίου 2026</div>
+
+    <h3 id="event3-title">Βραδιά Παράδοσης & Υφαντικής Κληρονομιάς</h3>
+
+    <p id="event3-text">
+      Μια ξεχωριστή πολιτιστική βραδιά στο Λαογραφικό Μουσείο Ανωγείων, 
+      με ζωντανή επίδειξη ύφανσης, παρουσίαση παραδοσιακών μοτίβων 
+      και έκθεση αυθεντικών ανωγειανών υφαντών.
+    </p>
+    <a href="event3.html" id="event3-link">Δείτε περισσότερα</a>
+  </div>
+</div>
+ </div>
+    </section>
+
+    <!-- Μόνιμες Συλλογές -->
+    <section id="collections" class="section" style="display:none;">
+      <h1 id="collections-title">Μόνιμες Συλλογές</h1>
+
+      <div class="collections-container">
+        <div class="collection-card">
+          <img src="yfanto 6.jpg" alt="Υφαντό με Ρόμβους και Σταυρούς" class="collection-img" />
+          <h3 id="col1-title">Υφαντό με Ρόμβους και Σταυρούς</h3>
+          <p id="col1-text">Πολύχρωμο ύφασμα με έντονη γεωμετρική διάταξη ρόμβων και σταυρικών μοτίβων. Τυπικό δείγμα συμβολικής κρητικής διακόσμησης.</p>
+        </div>
+
+        <div class="collection-card">
+          <img src="yfanto7.jpg" alt="Υφαντό με Φυτικά και Ανθοφόρα Μοτίβα" class="collection-img" />
+          <h3 id="col2-title">Υφαντό με Φυτικά και Ανθοφόρα Μοτίβα</h3>
+          <p id="col2-text">Πλούσια σύνθεση με καμπύλες και λουλουδένια σχέδια, κεντημένα με ζωντανές αποχρώσεις κόκκινου και χρυσού· δείγμα της γυναικείας οικιακής τέχνης.</p>
+        </div>
+
+        <div class="collection-card">
+          <img src="yfanto 8.jpg" alt="Παραδοσιακό Ριγωτό Υφαντό" class="collection-img" />
+          <h3 id="col3-title">Παραδοσιακό Ριγωτό Υφαντό</h3>
+          <p id="col3-text">Ύφασμα με κάθετες ρίγες σε εναλλαγή χρωμάτων, χαρακτηριστικό των κρητικών σκεπασμάτων και καλυμμάτων.</p>
+        </div>
+
+        <div class="collection-card">
+          <img src="yfanto9.jpg" alt="Υφαντό με Πολύχρωμα Ρόμβικα Μοτίβα" class="collection-img" />
+          <h3  id="col4-title">Υφαντό με Πολύχρωμα Ρόμβικα Μοτίβα</h3>
+          <p id="col4-text">Πολυσύνθετη σύνθεση με ρόμβους και τριγωνικά σχήματα. Αντιπροσωπεύει την ακρίβεια και τη ζωντάνια της παραδοσιακής ύφανσης του Μεραμπέλλου.</p>
+        </div>
+
+        <div class="collection-card">
+          <img src="yfanto10.jpg" alt="Υφαντό με Πλέγματα και Διασταυρούμενα Σχήματα" class="collection-img" />
+          <h3 id="col5-title">Υφαντό με Πλέγματα και Διασταυρούμενα Σχήματα</h3>
+          <p id="col5-text">Διακοσμητικό ύφασμα με έντονους συνδυασμούς κόκκινου και μοβ, χρησιμοποιούνταν για καλύμματα ή τοίχους.</p>
+        </div>
+
+        <div class="collection-card">
+          <img src="yfanto11.jpg" alt="Ριγωτό Υφαντό Καθημερινής Χρήσης" class="collection-img" />
+          <h3 id="col6-title">Ριγωτό Υφαντό Καθημερινής Χρήσης</h3>
+          <p id="col6-text">Απλούστερο ύφασμα με επαναλαμβανόμενες γραμμές και περιορισμένη παλέτα, χαρακτηριστικό της καθημερινής οικιακής ύφανσης στην Κρήτη.</p>
+        </div>
+
+        <div class="collection-card">
+          <img src="yfanto12.jpg" alt="Υφαντό με Ταινιωτή Διάταξη" class="collection-img" />
+          <h3 id="col7-title">Υφαντό με Ταινιωτή Διάταξη</h3>
+          <p id="col7-text">Ύφασμα με επαναλαμβανόμενες κάθετες λωρίδες σε έντονες αντιθέσεις χρωμάτων. Αντιπροσωπευτικό δείγμα της απλότητας και ρυθμικότητας των παραδοσιακών κρητικών υφαντών.</p>
+        </div>
+
+        <div class="collection-card">
+          <img src="yfanto13.jpg" alt="Βούργια με Πολύχρωμα Ρόμβικα Μοτίβα" class="collection-img" />
+          <h3 id="col8-title">Βούργια με Πολύχρωμα Ρόμβικα Μοτίβα</h3>
+          <p id="col8-text">Παραδοσιακή υφαντή βούργια από την Κρήτη, με συμμετρική διάταξη ρόμβων και έντονη χρωματική παλέτα. Η πλεξούδα και τα πομπόν στις άκρες λειτουργούν τόσο διακοσμητικά όσο και πρακτικά.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Επικοινωνία -->
+    <section id="contact" class="section" style="display:none;">
+      <h1 id="contact-title">Επικοινωνία</h1>
+      <p id="contact-text" class="contact-text">
+        email φοιτητή : <strong>csd4376@csd.uoc.gr</strong><br /><br />
+        email καθηγητή : <strong>zabulis@ics.forth.gr</strong><br /><br />
+        email τμήματος : <strong>csd@csd.uoc.gr</strong>
+      </p>
+    </section>
+  </main>
+
+<script>
+  let currentLang = "el";
+
+  const translations = {
+    el: {
+      // NAV + SECTION TITLES
+      home: "ΑΡΧΙΚΗ",
+      about: "ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ",
+      history: "ΙΣΤΟΡΙΑ ΤΟΥ ΝΗΣΙΟΥ",
+      yfant: "ΥΦΑΝΤΑ",
+      events: "ΕΚΘΕΣΕΙΣ ΚΑΙ ΕΚΔΗΛΩΣΕΙΣ",
+      collections: "ΜΟΝΙΜΕΣ ΣΥΛΛΟΓΕΣ",
+      contact: "ΕΠΙΚΟΙΝΩΝΙΑ",
+      title: "Τα Υφαντά γύρω απο την Κρήτη",
+      aboutTitle: "Σχετικά με εμάς",
+      historyTitle: "Ιστορία του Νησιού",
+      yfantTitle: "Υφαντά",
+      eventsTitle: "Εκθέσεις & Εκδηλώσεις",
+      collectionsTitle: "Μόνιμες Συλλογές",
+      contactTitle: "Επικοινωνία",
+
+      // μέσα στο translations.el
+"about-text": "Η παρούσα ιστοσελίδα αποτελεί μέρος της πτυχιακής εργασίας στο Τμήμα Επιστήμης Υπολογιστών και έχει ως κύριο αντικείμενο την ανάδειξη και την προβολή των παραδοσιακών υφαντών της Κρήτης.\n\nΗ εργασία επιχειρεί να συνδέσει την πλούσια πολιτιστική κληρονομιά του νησιού με τις σύγχρονες τεχνολογίες πληροφορικής, δημιουργώντας έναν ψηφιακό χώρο όπου η παράδοση συναντά την καινοτομία.\n\nΗ πτυχιακή εκπονήθηκε από τον φοιτητή Παναγιώτη Μπερμπερίδη υπό την επίβλεψη του Καθηγητή Ιωάννη Ζαμπούλη, με στόχο να αποτελέσει ένα εύχρηστο και καλαίσθητο εργαλείο για κάθε επισκέπτη που ενδιαφέρεται να γνωρίσει την τέχνη των υφαντών, την ιστορία τους και τον ρόλο τους στον πολιτισμό της Κρήτης.",
+"history-text": "Η ιστορία της Κρήτης ξεκινά από τη Νεολιθική εποχή, όταν οι πρώτες μόνιμες εγκαταστάσεις εμφανίστηκαν γύρω στο 7.000 π.Χ. Με την πάροδο των αιώνων, η Κρήτη ανέδειξε τον Μινωικό πολιτισμό, τον πρώτο μεγάλο πολιτισμό στην Ευρώπη, γνωστό για τα ανάκτορα της Κνωσού, της Φαιστού και των άλλων κέντρων.\n\nΜετά την κατάρρευση του Μινωικού πολιτισμού, η Κρήτη πέρασε υπό την επιρροή των Μυκηναίων και αργότερα ενσωματώθηκε στη Ρωμαϊκή και Βυζαντινή κυριαρχία. Σε μεταγενέστερες περιόδους γνώρισε την Ενετοκρατία, την Οθωμανική κατοχή, καθώς και την δημιουργία της Κρητικής Πολιτείας έως ότου ενσωματωθεί οριστικά στο ελληνικό κράτος.\n\nΗ Κρήτη διατήρησε πάντα έντονη πολιτιστική ταυτότητα και παράδοση, που επηρέασε την υφαντική τέχνη της, τα έθιμα, τη μουσική και τη λαϊκή έκφραση. Μέσα από τις αλλαγές, η ιστορία της αντανακλά την αντίσταση, τη δημιουργία και την επιβίωση ενός νησιού που έζησε πολλές επιρροές αλλά κράτησε τον πυρήνα της παράδοσης.",
+"contact-text": "email φοιτητή : csd4376@csd.uoc.gr\n\nemail καθηγητή : zabulis@ics.forth.gr\n\nemail τμήματος : csd@csd.uoc.gr",
+
+      // ΕΤΙΚΕΤΕΣ PINS ΣΤΟΝ ΧΑΡΤΗ
+      "pin1-label": "Μακάθι (Καλυβιανή)",
+      "pin2-label": "Βούργια (Μυλοπόταμος)",
+      "pin3-label": "Πάντα (Μεραμπ.)",
+      "pin4-label": "Μακάθι με Κεντρικό Ανθικό Μοτίβο",
+      "pin5-label": "Υφαντό με Εξάφυλλα Αστέρια",
+      "pin6-label": "Παραδοσιακό Υφαντό Πορτοφόλι με Γεωμετρικό Ρόμβο",
+
+
+      // YFANTA (5)
+      "weaving1-title": "Μακάθι — Μονή Καλυβιανής",
+      "weaving1-text": "Σύντομη περιγραφή: Αυτό το υφαντό είναι ένα μακάτι από τη Μονή Καλυβιανής στην Κρήτη. Πρόκειται για παραδοσιακό κρητικό υφαντό με πολύχρωμα γεωμετρικά μοτίβα — ρόμβους, τρίγωνα και διακοσμητικές λωρίδες — που υφαίνονται με τεχνική διπλού υφάσματος σε έντονους κόκκινους, χρυσοκίτρινους και πορτοκαλί τόνους. Το μοτίβο του συμβολίζει τη γυναικεία δημιουργικότητα και την ευημερία, ενώ η πλούσια χρωματική παλέτα και η συμμετρία φανερώνουν υψηλή δεξιοτεχνία και παράδοση αιώνων στη μοναστηριακή υφαντική της Κρήτης.",
+      "weaving2-title": "Βούργια — Μυλοπόταμος +1915",
+      "weaving2-text": "Σύντομη περιγραφή: Πλούσιο κέντημα με έντονα κόκκινα και χρυσά χρώματα. Κυριαρχούν ρόμβοι και συμμετρικά γεωμετρικά σχέδια. Χρησιμοποιούνταν ως διακοσμητικό ή αποθηκευτικό ύφασμα στις ορεινές περιοχές του Μυλοποτάμου.",
+      "weaving3-title": "Κιλίμι — Καινούριο 1888",
+      "weaving3-text": "Σύντομη περιγραφή: Λεπτό, επιμελημένο υφαντό με επαναλαμβανόμενα ρόμβους και σπειροειδή μοτίβα. Διακρίνεται για την ακρίβεια του σχεδίου και τη συμμετρία, χαρακτηριστικό της ανατολικής Κρήτης.",
+      "weaving4-title": "Πάντα - Μεραμπέλλο 1885",
+      "weaving4-text": "Σύντομη περιγραφή: Χοντρό, θερμό ύφασμα με πολύχρωμες διαγώνιες ζώνες και γεωμετρικές μορφές. Συχνά χρησιμοποιούνταν για κάλυμμα ή επένδυση τοίχων, συνδυάζοντας πρακτικότητα και διακόσμηση.",
+      "weaving5-title": "Βούργια - Μεράμπελλο 1860",
+      "weaving5-text": "Σύντομη περιγραφή: Ύφασμα με λεπτή, επιμήκη διάταξη και κάθετες λωρίδες σε λευκό, κόκκινο και μπλε. Διακρίνεται για τα μεσαία ρόμβικα μοτίβα και τη συμμετρική του απλότητα· πιθανότατα χρησιμοποιούνταν ως τσάντα ή κάλυμμα.",
+
+      // EVENTS (2)
+      "event1-date": "15 Νοεμβρίου 2025",
+      "event1-title": "Έκθεση Παραδοσιακών Υφαντών στο Ηράκλειο",
+      "event1-text": "Μια μοναδική έκθεση που αναδεικνύει τη μαγεία της παραδοσιακής υφαντικής τέχνης της Κρήτης, με σπάνια κομμάτια και ιστορικά υφαντά.",
+      "event2-date": "10 Δεκεμβρίου 2025",
+      "event2-title": "Διαδραστικό Εργαστήριο Υφαντικής",
+      "event2-text": "Ένα δημιουργικό σεμινάριο όπου οι συμμετέχοντες θα μάθουν βασικές τεχνικές και θα δημιουργήσουν τα δικά τους υφαντά.",
+      "event3-date": "20 Ιανουαρίου 2026",
+      "event3-title": "Βραδιά Παράδοσης & Υφαντικής Κληρονομιάς",
+      "event3-text": "Μια ξεχωριστή πολιτιστική βραδιά στο Λαογραφικό Μουσείο Ανωγείων, με ζωντανή επίδειξη ύφανσης, παρουσίαση παραδοσιακών μοτίβων και έκθεση αυθεντικών ανωγειανών υφαντών.",
+
+      // Κείμενο links "Δείτε περισσότερα"
+      "event-link-text": "Δείτε περισσότερα",
+
+      // COLLECTIONS (8)
+      "col1-title": "Υφαντό με Ρόμβους και Σταυρούς",
+      "col1-text": "Πολύχρωμο ύφασμα με έντονη γεωμετρική διάταξη ρόμβων και σταυρικών μοτίβων. Τυπικό δείγμα συμβολικής κρητικής διακόσμησης.",
+      "col2-title": "Υφαντό με Φυτικά και Ανθοφόρα Μοτίβα",
+      "col2-text": "Πλούσια σύνθεση με καμπύλες και λουλουδένια σχέδια, κεντημένα με ζωντανές αποχρώσεις κόκκινου και χρυσού· δείγμα της γυναικείας οικιακής τέχνης.",
+      "col3-title": "Παραδοσιακό Ριγωτό Υφαντό",
+      "col3-text": "Ύφασμα με κάθετες ρίγες σε εναλλαγή χρωμάτων, χαρακτηριστικό των κρητικών σκεπασμάτων και καλυμμάτων.",
+      "col4-title": "Υφαντό με Πολύχρωμα Ρόμβικα Μοτίβα",
+      "col4-text": "Πολυσύνθετη σύνθεση με ρόμβους και τριγωνικά σχήματα. Αντιπροσωπεύει την ακρίβεια και τη ζωντάνια της παραδοσιακής ύφανσης του Μεραμπέλλου.",
+      "col5-title": "Υφαντό με Πλέγματα και Διασταυρούμενα Σχήματα",
+      "col5-text": "Διακοσμητικό ύφασμα με έντονους συνδυασμούς κόκκινου και μοβ, χρησιμοποιούνταν για καλύμματα ή τοίχους.",
+      "col6-title": "Ριγωτό Υφαντό Καθημερινής Χρήσης",
+      "col6-text": "Απλούστερο ύφασμα με επαναλαμβανόμενες γραμμές και περιορισμένη παλέτα, χαρακτηριστικό της καθημερινής οικιακής ύφανσης στην Κρήτη.",
+      "col7-title": "Υφαντό με Ταινιωτή Διάταξη",
+      "col7-text": "Ύφασμα με επαναλαμβανόμενες κάθετες λωρίδες σε έντονες αντιθέσεις χρωμάτων. Αντιπροσωπευτικό δείγμα της απλότητας και ρυθμικότητας των παραδοσιακών κρητικών υφαντών.",
+      "col8-title": "Βούργια με Πολύχρωμα Ρόμβικα Μοτίβα",
+      "col8-text": "Παραδοσιακή υφαντή βούργια από την Κρήτη, με συμμετρική διάταξη ρόμβων και έντονη χρωματική παλέτα. Η πλεξούδα και τα πομπόν στις άκρες λειτουργούν τόσο διακοσμητικά όσο και πρακτικά."
+    },
+
+    en: {
+      // NAV + SECTION TITLES
+      home: "HOME",
+      about: "ABOUT US",
+      history: "HISTORY OF THE ISLAND",
+      yfant: "TEXTILES",
+      events: "EXHIBITIONS & EVENTS",
+      collections: "PERMANENT COLLECTIONS",
+      contact: "CONTACT",
+      title: "The Textiles of Crete",
+      aboutTitle: "About Us",
+      historyTitle: "History of the Island",
+      yfantTitle: "Textiles",
+      eventsTitle: "Exhibitions & Events",
+      collectionsTitle: "Permanent Collections",
+      contactTitle: "Contact",
+
+      // μέσα στο translations.en
+"about-text": "This website is part of an undergraduate thesis at the Computer Science Department and focuses on showcasing and promoting traditional Cretan textiles.\n\nThe project connects the island’s rich cultural heritage with modern information technologies, creating a digital space where tradition meets innovation.\n\nThe thesis was carried out by student Panagiotis Berberidis under the supervision of Professor Ioannis Zabulis, aiming to offer an easy-to-use, elegant tool for anyone interested in the art of weaving, its history, and its role in Cretan culture.",
+"history-text": "The history of Crete begins in the Neolithic era, when the first permanent settlements appeared around 7000 BCE. Over the centuries, Crete gave rise to the Minoan civilization, Europe’s first major civilization, renowned for the palaces of Knossos, Phaistos and other centers.\n\nAfter the collapse of the Minoan civilization, Crete came under Mycenaean influence and was later incorporated into Roman and Byzantine rule. In subsequent periods it experienced Venetian and Ottoman domination, as well as the creation of the Cretan State, before being fully integrated into the modern Greek state.\n\nCrete has always maintained a strong cultural identity and tradition that influenced its weaving, customs, music and folk expression. Through all changes, its history reflects resistance, creativity and the survival of an island shaped by many influences while preserving the core of its tradition.",
+"contact-text": "student email: csd4376@csd.uoc.gr\n\nprofessor email: zabulis@ics.forth.gr\n\ndepartment email: csd@csd.uoc.gr",
+
+      // MAP PIN LABELS IN ENGLISH
+      "pin1-label": "Makathi (Kalivianí)",
+      "pin2-label": "Vourgia (Mylopotamos)",
+      "pin3-label": "Panta (Mirab.)",
+      "pin4-label": "Makathi with Central Floral Motif",
+      "pin5-label": "Textile with Six-pointed Stars",
+      "pin6-label": "Traditional Woven Purse with Geometric Diamond",
+
+
+      // YFANTA (5)
+      "weaving1-title": "Makathi — Kalivianí Monastery",
+      "weaving1-text": "Summary: A traditional Cretan textile (makathi) from Kalivianí Monastery, woven with vivid geometric motifs—diamonds, triangles and decorative bands—using a double-cloth technique in rich reds, golds and oranges. The pattern symbolizes feminine creativity and prosperity; its palette and symmetry reflect centuries-old monastic craftsmanship.",
+      "weaving2-title": "Vourgia — Mylopotamos +1915",
+      "weaving2-text": "Summary: Rich embroidery in bold reds and golds with dominant diamond shapes and symmetric geometric layouts. Used as a decorative or storage fabric in the mountainous Mylopotamos area.",
+      "weaving3-title": "Kilimi — Kainourio 1888",
+      "weaving3-text": "Summary: Fine, meticulous flat-weave with repeating diamonds and spiral motifs. Noted for precision and symmetry, typical of eastern Crete.",
+      "weaving4-title": "Panta — Mirabello 1885",
+      "weaving4-text": "Summary: Thick, warm textile with multicolored diagonal bands and geometric forms. Often used as a cover or wall hanging, combining utility and decoration.",
+      "weaving5-title": "Vourgia — Mirabello 1860",
+      "weaving5-text": "Summary: Narrow elongated fabric with vertical stripes in white, red and blue. Distinguished by central diamond motifs and balanced simplicity; likely used as a bag or cover.",
+
+      // EVENTS (2)
+      "event1-date": "15 November 2025",
+      "event1-title": "Exhibition of Traditional Textiles in Heraklion",
+      "event1-text": "A unique exhibition highlighting the magic of Crete’s traditional weaving, with rare pieces and historic textiles.",
+      "event2-date": "10 December 2025",
+      "event2-title": "Interactive Weaving Workshop",
+      "event2-text": "A creative workshop where participants learn core techniques and produce their own small textiles.",
+      "event3-date": "20 January 2026",
+      "event3-title": "Evening of Tradition & Weaving Heritage",
+      "event3-text": "A special cultural evening at the Anogeia Folklore Museum, with live weaving demonstrations, presentation of traditional motifs, and an exhibition of authentic Anogeian textiles.",
+
+      // Link text for "View more"
+      "event-link-text": "View more",
+
+      // COLLECTIONS (8)
+      "col1-title": "Textile with Diamonds and Crosses",
+      "col1-text": "Colorful fabric with a strong geometric arrangement of diamonds and cross motifs—typical symbolic Cretan decoration.",
+      "col2-title": "Textile with Floral and Botanical Motifs",
+      "col2-text": "Rich composition with curving floral designs in vivid reds and golds; an example of women’s domestic craftsmanship.",
+      "col3-title": "Traditional Striped Textile",
+      "col3-text": "Fabric with vertical, alternating stripes; characteristic of Cretan blankets and coverings.",
+      "col4-title": "Textile with Multicolored Diamond Motifs",
+      "col4-text": "Complex composition of diamonds and triangular shapes—representing the precision and vitality of Mirabello weaving.",
+      "col5-title": "Textile with Grids and Interlaced Forms",
+      "col5-text": "Decorative fabric in bold combinations of red and purple; used for coverings or wall hangings.",
+      "col6-title": "Everyday Striped Textile",
+      "col6-text": "Simpler fabric with repeating lines and a restrained palette—typical of daily domestic weaving in Crete.",
+      "col7-title": "Textile with Banded Layout",
+      "col7-text": "Fabric of repeated vertical bands in strong color contrasts; a representative example of the simplicity and rhythm of traditional Cretan textiles.",
+      "col8-title": "Vourgia with Multicolored Diamond Motifs",
+      "col8-text": "Traditional Cretan woven bag with a symmetric diamond layout and vivid palette; the braid and pom-poms at the ends are both decorative and functional."
+    }
+  };
+
+  function toggleLanguage() {
+    currentLang = (currentLang === "el") ? "en" : "el";
+    applyTranslations();
+  }
+
+  function setText(id, text) {
+    const el = document.getElementById(id);
+    if (el && typeof text === "string") el.innerText = text;
+  }
+
+  function applyTranslations() {
+    const t = translations[currentLang];
+
+    // menu
+    setText("nav-home", t.home);
+    setText("nav-about", t.about);
+    setText("nav-history", t.history);
+    setText("nav-yfant", t.yfant);
+    setText("nav-events", t.events);
+    setText("nav-collections", t.collections);
+    setText("nav-contact", t.contact);
+
+    // main title + section titles
+    setText("main-title", t.title);
+    setText("about-title", t.aboutTitle);
+    setText("history-title", t.historyTitle);
+    setText("yfant-title", t.yfantTitle);
+    setText("events-title", t.eventsTitle);
+    setText("collections-title", t.collectionsTitle);
+    setText("contact-title", t.contactTitle);
+
+    // section body texts
+setText("about-text",   t["about-text"]);
+setText("history-text", t["history-text"]);
+setText("contact-text", t["contact-text"]);
+
+
+    // weaving cards
+    ["1","2","3","4","5"].forEach(n=>{
+      setText(`weaving${n}-title`, t[`weaving${n}-title`]);
+      setText(`weaving${n}-text`,  t[`weaving${n}-text`]);
+    });
+
+    // events (3)
+    ["1","2","3"].forEach(n=>{
+      setText(`event${n}-date`,  t[`event${n}-date`]);
+      setText(`event${n}-title`, t[`event${n}-title`]);
+      setText(`event${n}-text`,  t[`event${n}-text`]);
+    });
+
+    // collections
+    for (let i=1; i<=8; i++){
+      setText(`col${i}-title`, t[`col${i}-title`]);
+      setText(`col${i}-text`,  t[`col${i}-text`]);
+    }
+
+    // map pin labels
+    for (let i=1; i<=6; i++){
+      setText(`pin${i}-label`, t[`pin${i}-label`]);
+    }
+
+    // "Δείτε περισσότερα" / "View more" links for events
+    ["1","2","3"].forEach(n => {
+      const linkEl = document.getElementById(`event${n}-link`);
+      if (linkEl && typeof t["event-link-text"] === "string") {
+        linkEl.innerText = t["event-link-text"];
+      }
+
+      // Αλλαγή href ανάλογα με τη γλώσσα
+      if (linkEl) {
+        if (currentLang === "en") {
+          linkEl.href = `event${n}-en.html`;
+        } else {
+          linkEl.href = `event${n}.html`;
+        }
+      }
+    });
+  }
+
+  function showSection(sectionId) {
+    document.querySelectorAll(".section").forEach(sec => {
+      sec.classList.remove("active");
+      sec.style.display = "none";
+    });
+    const target = document.getElementById(sectionId);
+    if (target){
+      target.style.display = "block";
+      target.classList.add("active");
+      if (sectionId !== "home") window.scrollTo(0,0);
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+  applyTranslations();
+  showSection('home');        // δείξε Αρχική αμέσως (τίτλος + χάρτης)
+});
+
+</script>
+
+
+
+</body>
+</html>
